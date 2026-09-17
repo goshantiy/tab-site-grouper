@@ -55,50 +55,6 @@ to Russian (`default_locale` in the manifest). To add another language, copy
 one of the `messages.json` files into a new `_locales/<language-code>/`
 folder and translate the `message` values.
 
-## Installation
-
-Firefox won't let you permanently install an unsigned extension — there are
-two paths.
-
-### Quick way — temporary install (for testing)
-
-1. Open `about:debugging#/runtime/this-firefox` in Firefox.
-2. Click "Load Temporary Add-on…".
-3. Select the `tab-site-grouper.zip` file.
-4. The icon appears in the toolbar.
-
-This lasts until Firefox restarts — after that, repeat steps 1–3.
-
-### Permanent install — signing via addons.mozilla.org
-
-For a permanent install, Mozilla needs to sign the extension (even if you
-never intend to publish it publicly — there's an "unlisted" self-distribution
-mode that signs automatically, with no manual review). Steps:
-
-1. Go to https://addons.mozilla.org/ and sign in (or create a free Firefox
-   account).
-2. Open the developer API key management page:
-   https://addons.mozilla.org/developers/addon/api/key/ — generate a `JWT
-   issuer` (this is your API key) and `JWT secret` (API secret) pair. You
-   can revoke and regenerate these at any time from the same page.
-3. Install the `web-ext` tool if you don't have it yet:
-   `npm install -g web-ext`
-4. From the extension's folder, run:
-   ```
-   web-ext sign --channel=unlisted \
-     --api-key=<your JWT issuer> \
-     --api-secret=<your JWT secret>
-   ```
-   This uploads the extension to Mozilla's servers, waits for automated
-   validation (usually 1–5 minutes), and saves the signed `.xpi` into the
-   `web-ext-artifacts/` folder.
-5. Open the resulting `.xpi` in Firefox (drag the file into the browser
-   window, or `about:addons` → gear icon → "Install Add-on From File…") — it
-   will install permanently and survive browser restarts.
-
-Whenever you bump the version (`version` in `manifest.json`), repeat step 4
-— every signed version is stored separately in your developer account.
-
 ## Checking the minimum Firefox version
 
 The extension uses `browser.tabs.group` / `browser.tabGroups`, which don't
