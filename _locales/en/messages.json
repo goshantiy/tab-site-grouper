@@ -1,0 +1,59 @@
+{
+  "extensionName": {
+    "message": "Tab Grouper by Site"
+  },
+  "extensionDescription": {
+    "message": "Automatically (and on demand) groups Firefox tabs by website, using Firefox's built-in tab groups."
+  },
+  "actionTitle": {
+    "message": "Group tabs by site (click = group now)"
+  },
+  "menuGroupNow": {
+    "message": "Group tabs by site"
+  },
+  "menuOptions": {
+    "message": "Options…"
+  },
+  "optionsPageTitle": {
+    "message": "Settings — Tab Grouper by Site"
+  },
+  "optionsHeading": {
+    "message": "Tab Grouper by Site"
+  },
+  "optionsAutoGroupLabel": {
+    "message": "Automatic grouping"
+  },
+  "optionsAutoGroupDescription": {
+    "message": "Group a tab with other tabs from the same site as soon as the page finishes loading. The toolbar button and the \"Group tabs by site\" context menu item keep working regardless of this setting."
+  },
+  "optionsExclusionsHeading": {
+    "message": "Exclusions"
+  },
+  "optionsExclusionsDescription": {
+    "message": "Sites on this list are never grouped — not automatically, not by the button, and not from the context menu."
+  },
+  "optionsExclusionsInputPlaceholder": {
+    "message": "e.g. example.com"
+  },
+  "optionsAddButton": {
+    "message": "Add"
+  },
+  "optionsExclusionsEmpty": {
+    "message": "The list is empty — every site gets grouped."
+  },
+  "optionsRemoveButtonLabel": {
+    "message": "Remove"
+  },
+  "optionsInvalidHost": {
+    "message": "Doesn't look like a domain name. Example: example.com"
+  },
+  "optionsDuplicateHost": {
+    "message": "This site is already on the exclusion list."
+  },
+  "optionsFooterHint": {
+    "message": "Changes are saved automatically."
+  },
+  "consoleNoApiWarning": {
+    "message": "Tab Site Grouper: this Firefox version has no tab-grouping API (requires Firefox 139+)."
+  }
+}

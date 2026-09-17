@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title data-i18n="optionsPageTitle">Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main>
+      <h1 data-i18n="optionsHeading">Tab Grouper by Site</h1>
+
+      <section class="card">
+        <label class="switch-row" for="auto-group-toggle">
+          <input type="checkbox" id="auto-group-toggle" />
+          <span>
+            <span class="switch-title" data-i18n="optionsAutoGroupLabel"
+              >Automatic grouping</span
+            >
+            <span class="switch-description" data-i18n="optionsAutoGroupDescription"
+              >Description</span
+            >
+          </span>
+        </label>
+      </section>
+
+      <section class="card">
+        <h2 data-i18n="optionsExclusionsHeading">Exclusions</h2>
+        <p class="hint" data-i18n="optionsExclusionsDescription">Description</p>
+
+        <form id="exclusion-form" class="exclusion-form">
+          <input
+            type="text"
+            id="exclusion-input"
+            data-i18n-placeholder="optionsExclusionsInputPlaceholder"
+            placeholder="example.com"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button type="submit" data-i18n="optionsAddButton">Add</button>
+        </form>
+        <p id="exclusion-error" class="error" hidden></p>
+
+        <ul id="exclusion-list" class="exclusion-list"></ul>
+        <p id="exclusion-empty" class="hint" data-i18n="optionsExclusionsEmpty" hidden>
+          Empty
+        </p>
+      </section>
+
+      <p class="footer-hint" data-i18n="optionsFooterHint">Changes are saved automatically.</p>
+    </main>
+    <script src="../common.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

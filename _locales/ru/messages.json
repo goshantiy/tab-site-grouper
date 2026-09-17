@@ -1,0 +1,59 @@
+{
+  "extensionName": {
+    "message": "Группировка вкладок по сайту"
+  },
+  "extensionDescription": {
+    "message": "Автоматически (и по кнопке) группирует вкладки Firefox по сайту, используя встроенные группы вкладок Firefox."
+  },
+  "actionTitle": {
+    "message": "Сгруппировать вкладки по сайту (клик = сгруппировать сейчас)"
+  },
+  "menuGroupNow": {
+    "message": "Сгруппировать вкладки по сайтам"
+  },
+  "menuOptions": {
+    "message": "Настройки…"
+  },
+  "optionsPageTitle": {
+    "message": "Настройки — Группировка вкладок по сайту"
+  },
+  "optionsHeading": {
+    "message": "Группировка вкладок по сайту"
+  },
+  "optionsAutoGroupLabel": {
+    "message": "Автоматическая группировка"
+  },
+  "optionsAutoGroupDescription": {
+    "message": "Группировать вкладку с другими вкладками того же сайта сразу после загрузки страницы. Кнопка на панели инструментов и пункт контекстного меню «Сгруппировать вкладки по сайтам» продолжают работать независимо от этой настройки."
+  },
+  "optionsExclusionsHeading": {
+    "message": "Исключения"
+  },
+  "optionsExclusionsDescription": {
+    "message": "Сайты из этого списка никогда не группируются — ни автоматически, ни по кнопке, ни через контекстное меню."
+  },
+  "optionsExclusionsInputPlaceholder": {
+    "message": "например, example.com"
+  },
+  "optionsAddButton": {
+    "message": "Добавить"
+  },
+  "optionsExclusionsEmpty": {
+    "message": "Список пуст — все сайты группируются."
+  },
+  "optionsRemoveButtonLabel": {
+    "message": "Удалить"
+  },
+  "optionsInvalidHost": {
+    "message": "Не похоже на доменное имя. Пример: example.com"
+  },
+  "optionsDuplicateHost": {
+    "message": "Этот сайт уже в списке исключений."
+  },
+  "optionsFooterHint": {
+    "message": "Изменения сохраняются автоматически."
+  },
+  "consoleNoApiWarning": {
+    "message": "Tab Site Grouper: в этой версии Firefox нет API группировки вкладок (нужна Firefox 139+)."
+  }
+}
